@@ -68,8 +68,8 @@
 	// custom header image support
 	define('NO_HEADER_TEXT', true );
 	define('HEADER_IMAGE', '%s/images/default-header.png'); // %s is the template dir uri
-	define('HEADER_IMAGE_WIDTH', 400); // use width and height appropriate for your theme
-	define('HEADER_IMAGE_HEIGHT', 66);
+	define('HEADER_IMAGE_WIDTH', 481); // use width and height appropriate for your theme
+	define('HEADER_IMAGE_HEIGHT', 46);
 	// gets included in the admin header
 	function admin_header_style() {
 	    ?><style type="text/css">

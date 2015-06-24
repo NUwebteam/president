@@ -1,4 +1,5 @@
 # Exclude these files from the git repo
+# I had a db backup in the db directory
 db/*
 wp-content/backup/*
 wp-content/cache/*
