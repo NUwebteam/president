@@ -1,4 +1,5 @@
 # Exclude these files from the git repo
+db/*
 wp-content/backup/*
 wp-content/cache/*
 wp-content/upgrade/*
