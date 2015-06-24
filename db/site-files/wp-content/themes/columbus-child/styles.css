@@ -1,0 +1,82 @@
+.wrapper, .container {
+	max-width: none;
+}
+
+h4 {
+	color: #FFF;
+}
+
+#header-image.container {
+    line-height: 0.8em;
+    max-width: 481px;
+}
+
+#logo {
+	padding: 29px 0 15px 25px;
+}
+
+.nav-search {
+	margin-right: 25px;
+	top: 40px;
+}
+
+#identifier {
+    background: #252525 url("/president/wp-content/themes/columbus-child/images/identifier-header-bg.jpg") repeat scroll 0 0;
+}
+
+#identifier h2 {
+	padding: 0 0 0 25px;;
+}
+
+#identifier h2 a:link, #identifier h2 a:visited, #identifier h2 a:hover, #identifier h2 a:active {
+    color: #FFF;
+}
+
+#nav-primary * {
+	box-sizing: border-box;
+}
+
+#nav-primary {
+	background-color: #FFF;
+	margin: 3px 0;
+}
+
+#nav-primary ul {
+	margin: 0;
+	width: 100%;
+}
+
+#nav-primary ul li {
+	border-right: 3px solid white;
+	width: 25%;
+}
+
+#nav-primary ul li:last-child {
+	border-right: none;
+}
+
+#nav-primary ul li a {
+	background-color: #252525;
+    padding: 17px;
+	width: 100%;
+}
+
+.col4 {
+	box-sizing: border-box;
+	background-color: #252525;
+	border-right: 3px solid FFF;
+	float: left;
+	padding: 18px;
+	width: 25%;
+}
+
+#footer-top {
+	clear: both;
+	margin-top: 3px;
+	width: 100%;
+}
+
+footer .wrapper {
+	padding: 0 25px;
+	width: auto;
+}

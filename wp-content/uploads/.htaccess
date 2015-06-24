@@ -1,0 +1,9 @@
+# Attempt to load files from production if they're not in local instance
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  # Rule for local to production
+  RewriteRule (.*) http://nuweb15.neu.edu/president//wp-content/uploads/$1
+</IfModule>
