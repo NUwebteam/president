@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/lessframework.css" />
     <link href="<?php bloginfo('template_url'); ?>/fancydropdown.css" rel="stylesheet" type="text/css" />
     <link href="<?php bloginfo('template_url'); ?>/footer.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/bec9bb03-a56a-4183-97b2-4d5fd50eeed6.css"/>
+    <link type="text/css" rel="stylesheet" href="https://fast.fonts.com/cssapi/cac43e8c-6965-44df-b8ca-9784607a3b53.css"/>
     <link href="<?php bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <script src="http://www.northeastern.edu/scripts/modernizr-1.7.min.js" type="text/javascript"></script>
@@ -79,7 +79,6 @@
 						<h2><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</h2></span-->
 			</div><!--.wrapper-->
-            <div id="nav-primary" class="nav">
 		</header>
         <div id="identifier">
 	    	<div class="wrapper">
@@ -88,7 +87,15 @@
             	</h2>
 	        </div>
     	</div>
-    </div><!--#header-->
+        <div id="nav-primary" class="nav">
+        	<nav>
+				<div class="menu-button"><img alt="Open Menu" height="30" src="http://www.northeastern.edu/commencement/images/menu_open.gif" width="30"/></div>
+                <div class="container">
+                	<?php wp_nav_menu( array( 'walker' => new Northeasternwebteam_Page_Navigation_Walker, 'items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation" >%3$s</ul>' ) ); ?>
+                </div> <!-- end container --> 
+            </nav>
+        </div> <!--#nav-primary-->
+	</div><!--#header-->
 
       <div id="body" <?php if ( is_home() || is_front_page() ) { ?>class="pull-up-video"<?php } ?>>
 		<?php if ( is_home() || is_front_page() ) { ?>
